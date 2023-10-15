@@ -10,18 +10,17 @@
 </head>
 
 <body>
-    <content-wrapper>
-        <header-main>
+    <div class="container-fluid">
+        <div class="container d-flex justify-content-center" style="border: solid 2px white; height:90px; background-image: url(image/fundo.png)">
+            <div class="col-3 d-flex ms-auto align-items-center justify-content-start pl-2" style="border: solid 2px white; height:auto; background-image: url(image/fgreen.png)">
+               <h5>COLUNA 1</h5>     
+            </div>
 
-        </header-main>
-        <content-main>
-
-        </content-main>
-        <h5>Hello Blade</h5>
-        <footer-main>
-
-        </footer-main>
-    </content-wrapper>
+            <div class="col-9 d-flex align-items-center" style="border: solid 2px white; height:auto; background-image: url(image/fred.png)">
+                <h5>COLUNA 2</h5>               
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

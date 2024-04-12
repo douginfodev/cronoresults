@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylemaster.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script src="src/components/CardEvents.js" defer></script>
+    <!-- <script src="src/components/CardEvents.js" defer></script> -->
     <meta name="Description"
         content="Crono Results - Software de computação de tempos de competições de Enduro F.I.M. e Rally de Velocidade">
-    <meta name="author" content="Douglas Ramos - cronoresults sitemas">
+    <meta name="author" content="Douglas Ramos - Cronoresults Sistemas">
     <meta name="robots" content="index,follow">
     <title>Crono Results - Sistemas de Computação de Tempos</title>
 </head>
@@ -19,150 +20,231 @@
 
         <!-- Header -->
         <header>
-            <a href="../index.html">
-                <div class="brand">
-                    <img src="assets/img/logo_cronoresults.png" alt="CronoResults Sistemas" />
+            <a href="index.html">
+                <div class="brand" >
+                    <img tabindex="0" src="assets/img/logo_cronoresults.png" alt="CronoResults Sistemas" />
                 </div>
             </a>
 
-            <nav style="display:flex; justify-content: space-around;">
+            <!-- <nav class="menu"> 
                 <h1><a href="../aula01/">SOBRE</a></h1>
                 <h1>SISTEMA</h1>
                 <h1>EVENTOS</h1>
                 <h1>RESULTADOS</h1>
                 <h1>RANKING</h1>
                 <h1>(27) 99932-9914</h1>
-            </nav>
+            </nav>-->
         </header>
 
         <main>
-            <div class="section-display">
-                <div class="display-espace">
-                    <img src="assets/img/logoimersao.png" width="800px" height="auto">
+            <section class="section-display">
+                <div class="display-events">
+                    <div class="display-events-col">
+                      <h2>1ª etapa</h2>
+                      <h2>circuito paraju</h2>
+                      <img src="assets/img/logovronoresultsdisplay.svg" alt="Logo Cronoresults Sistemas">
+                      <h2>Itaguaçu - ES</h2>
+                      <h2>28/04/2024</h2>
+                    </div>
+                    <div class="display-events-col">
+                        <a href="https://www.clubedetrilheiros.com.br/login.php" target="_blank"><button>inscrições</button></a> 
+                        <a href="#"><button class="btn-outline">largada</button></a>  
+                        <a href="#"><button class="btn-outline">res. on line</button></a>  
+                        <a href="#"><button class="btn-outline">classificação</button></a>  
+                    </div>
                 </div>
 
                 <div class="display-sistema">
-                    <h1>SISTEMA</h1>
-                    <p>Crono Results Sistemas de Computação de competições a motor.
-                        Com os sitemas Enduro Time, Enduro Time F.I.M e Rally Results, estamos preparados
-                        para atender-mos a computação de tempos de suas competições, tais como, Enduro F.I.M. e
-                        Rally de Velocidade.
-                    </p>
+                    <h1 class="display-sistema-titulo">CRONO RESULTS</h1>
+                   <p class="display-sistema-descricao">SISTEMAS DE CRONOMETRAGEM</p>
+                   <p class="display-sistema-descricao">"ENDURO E RALLY"</p>
                 </div>
 
                 <div class="display-calendario">
-                    <h1 style="text-align: center;">Calendário</h1>
+                    <h1 style="text-align: center;">Calendário 2024</h1>
                     <div class="calendario-row">
-                        <p>1º END. É DURO - ALTO GUANDU</p>
-                        <h2>Afonso Cláudio - ES</h2>
+                        <p>1º ETP. - CIRCUITO PARAJU </p>
+                        <h2>Itaguaçu - ES</h2>
                     </div>
 
                     <div class="calendario-row">
-                        <p>2º END. É DURO - CARAMURU</p>
-                        <h2>Santa Naria do Jetibá - ES</h2>
+                        <p>2º ETP. - CIRCUITO RED BULL</p>
+                        <h2>Santa Maria do Jetibá - ES</h2>
                     </div>
 
                     <div class="calendario-row">
-                        <p>3º END. É DURO - SERRA PELADA</p>
-                        <h2>Afonso Cláudio - ES</h2>
-                    </div>
-
-                    <div class="calendario-row">
-                        <p>4º END. É DURO - SANTA LEOPOLDINA</p>
+                        <p>3º ETP. - CIRCUITO SCHUMACKER</p>
                         <h2>Santa Leopoldina - ES</h2>
                     </div>
 
                     <div class="calendario-row">
-                        <p>5º END. É DURO - PARAJÚ</p>
-                        <h2>Itaguaçú - ES</h2>
+                        <p>4º ETP. - CIRCUITO CARAMURU</p>
+                        <h2>Santa Maria do Jetibá - ES</h2>
                     </div>
 
                     <div class="calendario-row">
-                        <p>6º END. É DURO - LEKKER</p>
+                        <p>5º ETP. - CIRCUITO ALTO S. JOANA</p>
                         <h2>Afonso Cláudio - ES</h2>
                     </div>
-                </div>  
-            </div> 
+                </div>
+            </section>
 
-
+            <!-- SECTION EVENTOS -->
             <div class="section-eventos">
                 <div class="section-eventos-titulo">
                     <h1>EVENTOS</h1>
                 </div>
-                
+
                 <div class="section-eventos-linha">
-                   <!-- <div class="section-eventos-colunas">
-                        <div class="section-eventos-card-titulo"> 
+                    <div class="section-eventos-colunas">
+                        <div class="section-eventos-card-titulo">
                             <h2>ENDURO É DURO 2024</h2>
-                        </div>   
-                        <div class="section-eventos-card-logo"> 
-                            <img src="assets/img/logo_ctac2023.png" alt="ENDURO É DURO 2024"/>
-                        </div>  
-                        <div class="section-eventos-card-info"> 
-                            <a href="https://www.clubedetrilheiros.com.br/noticias.php?id=160" target="_blank"><p>Resultados</p></a>
                         </div>
-                        <div class="section-eventos-card-rodape"> 
-                            <a href="https://drive.google.com/file/d/1XlgGlXFdEOz76NiPP6-xVgXEwOCGgW5T/view?pli=1" target="_blank"><button>RANKING FINAL</button></a>
+                        <div class="section-eventos-card-logo">
+                            <img src="assets/img/logo_ctac2023.png" alt="ENDURO É DURO 2024" />
                         </div>
-                    </div>-->
-
-                    <card-events>ABC</card-events>
-
-                   <!-- <div class="section-eventos-colunas">
-                        <h2>COL 2</h2>
-                    </div> 
-
-                    <div class="section-eventos-colunas">
-                        <h2>COL 3</h2>
+                        <div class="section-eventos-card-info">
+                                <p>CIRCUITOS</p>
+                                <ol>
+                                    <a href="https://www.clubedetrilheiros.com.br/login.php" target="_blank">
+                                    <li>CIRCUITO PARAJU - Itaguaçu</li></a>
+                                    <li>CIRCUITO RED BULL - Santa Maria Jetibá</li>
+                                    <li>CIRCUITO SCHUMACKER - Santa Leopoldina</li>
+                                    <li>CIRCUITO CARAMURU - Santa Maria Jetibá</li>
+                                    <li>CIRCUITO ALTO S. JOANA - Afonso Cláudio</li>
+                                </ol>
+                            
+                        </div>
+                        <div class="section-eventos-card-rodape">
+                            <a href="https://drive.google.com/file/d/1XlgGlXFdEOz76NiPP6-xVgXEwOCGgW5T/view?pli=1"
+                                target="_blank"><button>RANKING FINAL</button></a>
+                        </div>
                     </div>
 
-                    <div class="section-eventos-colunas">
-                        <h2>COL 4</h2>
+                    <div id="section-eventos-linha2" class="section-eventos-colunas">
+                        <div class="section-eventos-card-titulo">
+                            <h2>ENDURO É DURO 2023</h2>
+                        </div>
+                        <div class="section-eventos-card-logo">
+                            <img src="assets/img/logo_ctac2023.png" alt="ENDURO CTAC 2024" />
+                        </div>
+                        <div class="section-eventos-card-info">
+                            <p>CIRCUITOS</p>
+                            <ol>
+                                <li>Alto Guandu</li>
+                                <li>Caramuru</li>
+                                <li>Serra Pelada</li>
+                                <li>Santa Leopoldina</li>
+                                <li>Paraju</li>
+                                <li>Lekker</li>
+                            </ol>
+                            </a>
+                        </div>
+                        <div class="section-eventos-card-rodape">
+                            <a href="https://drive.google.com/file/d/1f7ALTt3a_qA1EZPzeIsXFM31gzueToNz/view"
+                                target="_blank"><button>RANKING FINAL</button></a>
+                        </div>
                     </div>
-                </div> -->
+
+                    <div id ="section-eventos-linha3" class="section-eventos-colunas">
+                        <div class="section-eventos-card-titulo">
+                            <h2>ENDURO CTAC 2023</h2>
+                        </div>
+                        <div class="section-eventos-card-logo">
+                            <img src="assets/img/logo_ctac.png" alt="ENDURO CTAC 2024" />
+                        </div>
+                        <div class="section-eventos-card-info">
+                            <p>CIRCUITOS</p>
+                            <ol>
+                                <li>Plaster</li>
+                                <li>Alto Guandu</li>
+                                <li>Lekker</li>
+                                <li>Serra Pelada</li>
+                                <li>Serra do Boi</li>
+                                <li>Lekker</li>
+                            </ol>
+                            </a>
+                        </div>
+                        <div class="section-eventos-card-rodape">
+                            <a href="https://drive.google.com/file/d/1XlgGlXFdEOz76NiPP6-xVgXEwOCGgW5T/view"
+                                target="_blank"><button>RANKING FINAL</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="section-sobre">
+            <!-- <div class="section-sobre"> 
                 <div class="section-sobre-titulo">
                     <h1>SOBRE</h1>
                 </div>
-                
+
                 <div class="section-sobre-linha">
-                    <div class="section-sobre-colunas">
-                        <h2>ENDURO TIME</h2>
+                    <div class="section-sobre-colunas1">
+                        <h2>ENDURO TIME - ENDURO ED</h2>
+                        <p>O Enduro Time - ED, é um sistema de cronomotragem, criado especificamente para competições de enduro no formato Enduro É Duro.</p>
+                        <p>Desde a parte de inscrições, bem como, a inclusão dos competidores na prova, ordem de largada, computação dos tempos nos enduro teste, computação geral da prova e gerar a classifcação do campeonato.</p>
                     </div>
 
-                    <div class="section-sobre-colunas">
-                        <h2>CARACTERÍSTICAS</h2>
+                    <div class="section-sobre-colunas2">
+                        <div class="section-sobre-colunas2-section">
+                            <div class="section-sobre-colunas2-section-col1">
+                              <h2>CADASTRO</h2>
+                              <h3>CAMPEONATOS</h3>
+                              <h3>PROVA</h3>
+                              <h3>PILOTOS</h3>
+                              <h3>LARGADA</h3>
+                              <h3>TEMPOS</h3>
+                              <h3>RESULTADOS</h3>
+                              <h3>CLASSIFICAÇÃO</h3>
+                              <H3>IMPORTAÇÃO DE INSCRIÇÕES</H3>
+                              <H3>EXPORTAÇÃO DE RESULTADOS</H3>
+                            </div>
+                            <div class="section-sobre-colunas2-section-col1">
+                                <h2>RELATÓRIOS</h2>
+                                <h3>COMPETIDORES</h3>
+                                <h3>ORDEM DE LARGADA</h3>
+                                <h3>TEMPOS ETS</h3>
+                                <h3>RESULTADOS GERAL</h3>
+                                <h3>RESULTADOS CATEGORIA</h3>
+                                <h3>CLASSIFICAÇÃO</h3>
+                                <h2>RESULTADOS ONLINE</h2>
+                                <h3>GERAL - EM BREVE</h3>
+                                <h3>CATEGORIA - EM BREVE</h3>
+                        
+                           </div>
+                           <div class="section-sobre-colunas2-section-col2">
+                             <img src="assets/img/display_sistema.jpg" alt="" style="width:100%;height: auto; padding:20px;">
+                           </div>
+                        </div>
                     </div>
 
-                    <div class="section-sobre-colunas">
-                        <h2>VIDEO</h2>
-                    </div>
+                    
                 </div>
-            </div>
-
+                <div class="section-sobre-linha3">
+ <div class="section-sobre-colunas3"> 
+                        <h2>CRONORESULTS</h2>
+                        <p><span>CronoResults Sistemas de Computação</span> de competições esportivas.
+                        <p>Com os sistemas de <span>Enduro e Rally</span>, estamos preparados,
+                            para fazer-mos computação de tempos e resultados de competições em todo 
+                            território nacional.</p>
+                        <p><span>VENHA PARA CRONORESULTS</span></p>
+                    </div> 
+                </div>
+            </div> -->
         </main>
 
         <footer>
             <div class="footer-endereco">
-             <h1>CRONO RESULTS SISTEMAS</h1>
-             <p>Rua Washington Luís, 121</p>
-             <p>Jardim América - CARIACICA - ES</p>
-             <p>CEP: 29140-350</p>
-            </div>
-
-            <div class="footer-menu">
-                <h1>MENU</h1>
-             <a href="#"><p>SOBRE</p></a>
-             <a href="#"><p>SISTEMA</p></a>
-             <a href="#"><p>EVENTO</p></a>
-             <a href="#"><p>RANKING</p></a>
+                <h1>CRONO RESULTS SISTEMAS</h1>
+                <p>Rua Washington Luís, 121</p>
+                <p>Jardim América - CARIACICA - ES</p>
+                <p>CEP: 29140-350</p>
             </div>
 
             <div class="footer-contato">
                 <h1>CONTATO</h1>
-                <p>contato@cronoresults.com.br</p>
+                <p>douglas ramos</p>
+            <p style="text-transform: none;">douglasramos@cronoresults.com.br</p>
                 <p>(27) - 99932-9914</p>
             </div>
         </footer>

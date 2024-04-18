@@ -1,1 +1,1 @@
-console.log('Ola typescript');
+<app-root>Loading</app-root>

@@ -21,7 +21,7 @@
     --section-colors: #404040;
     --container-colors: 404040;
     --border-color: #18F65F;
-    --border-card-color:  #252c33;
+    --border-card-color:  #5C5861;
 
     /* background Images */
     --md-ref-secondary-image: url("../img/secondary-color.png");
@@ -42,10 +42,26 @@
     /* spaccing */
     --spacing-section: 16px;
     --padding-default: 10px;
-    --border-radius: 15px;
-
+    --border-radius:   15px;
+    --margin-compact:  16px;
+    --margin-mediun-expanded: 24px;
+    /* espaco entre linha tamanhop da font x 1.5 */
+   
     /* Fonts */
     --font-roboto: 'Roboto', sans-serif;
+    --md-ref-typeface-weight-regular: 400;
+    --md-ref-typeface-weight-title-small: 500;
+    --md-ref-typeface-weight-title-prominent: 700;
+    --md-sys-typescale-display-large-font: 57pt;
+    --md-sys-typescale-headline-large-size: 3.0rem;
+    --md-sys-typescale-title-large-size: 2.2rem;
+    --md-sys-typescale-label-large-size: 1.6rem;
+    --md-sys-typescale-headline-mediun-size: 2.7rem;
+    --md-sys-typescale-title-mediun-size: 1.9rem;
+    --md-sys-typescale-headline-small-size: 2.4rem;
+    --md-sys-typescale-title-small-size: 1.6rem;
+    --md-sys-typescale-label-small-size: 1.6rem;
+    --md-sys-typescale-headline-size: 1.8rem;
     font-size: 62.5%;
     text-transform: uppercase;
 }
@@ -61,6 +77,9 @@ a:hover {
 }
 
 h1 {
+    font-size: var(--md-sys-typescale-headline-large-size);  
+    font-weight: 400;
+    line-height: 2.0rem;
     color: var(--h1-colors);
 }
 
@@ -75,6 +94,7 @@ input {
     height: 45px;
     font-weight: 700;
     line-height: 1.5;
+    letter-spacing: 2.5px;
 
     text-align: center;
     text-decoration: none;
@@ -100,6 +120,7 @@ input {
 .btn-outline{
     background-color: var(--md-ref-foreground-color);
     background-image: var(--md-ref-foreground-image);
+    color: var(--buttons-colors);
 }
 
 input {
@@ -183,11 +204,11 @@ footer {
 .footer-endereco h1,
 .footer-menu h1,
 .footer-contato h1 {
+    font-size: var(--md-sys-typescale-title-large-size);
     margin-bottom: 8px;
 }
 
 .footer-endereco,
 .footer-contato{
     justify-content: center;
-}  
-
+} 

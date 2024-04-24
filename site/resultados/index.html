@@ -7,9 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/stylemaster.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <!-- <script src="src/components/CardEvents.js" defer></script> -->
-    <meta name="Description"
-        content="Crono Results - Software de computação de tempos de competições de Enduro F.I.M. e Rally de Velocidade">
+    <meta name="Description" content="Crono Results - Software de computação de tempos de competições de 
+Enduro F.I.M. e Rally de Velocidade">
     <meta name="author" content="Douglas Ramos - Cronoresults Sistemas">
     <meta name="robots" content="index,follow">
     <title>Crono Results - Resultados Online</title>
@@ -21,7 +20,7 @@
 
         <!-- Header -->
         <header>
-            <a href="index.html">
+            <a href="https://www.cronoresults.com.br/eduro">
                 <div class="brand">
                     <img tabindex="0" src="../assets/img/logo_cronoresults.png" alt="CronoResults Sistemas" />
                 </div>
@@ -42,9 +41,9 @@
                 </div>
 
                 <div class="display-events-buttons">
-                    <a href="#"><button class="btn-outline">geral</button></a>
-                    <a href="#"><button class="btn-outline">volta 1</button></a>
-                    <a href="#"><button class="btn-outline">volta 2</button></a>
+                    <a href=""><button class="btn-outline">geral</button></a>
+                    <a href="#"><button id="btn-outline-disabled" class="btn-outline">volta 1</button></a>
+                    <a href="#"><button id="btn-outline-disabled" class="btn-outline">volta 2</button></a>
                 </div>
             </section>
 
@@ -53,112 +52,808 @@
                 <div class="section-eventos-titulo">
                     <h1>geral</h1>
                 </div>
-
                 <div class="section-eventos-linha">
-                    <!-- EDURO 2024 -->
                     <div class="section-results-list-card">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
                                     <h1>1</h1>
                                 </div>
-
                                 <div class="section-results-card-identification">
-                                    <h2>EY - Joao Pilot de Enduro - 10</h2>
+                                    <h2>EJ - JOAO MARCOS SANTANA DE SOUZA DIAS - 135</h2>
                                 </div>
                             </div> <!-- content row -->
-
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">
-                                    v1 - 00:08:10.54<br>
-                                    V2 - 00:00:00.00
-                                </div>
+                                <div class="section-results-card-content-col">V1 - 00:13:17,24 <br>V2 - 00:13:06,13</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:08:10.54</h2>
-                                        <h4>00:00:00</h4>
+                                        <h2>00:26:23,37</h2>
+                                        <h4 class="dif"> dif. 00:00:00,00</h4>
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- card content -->
+                        </div>
                     </div>
-
                     <div class="section-results-list-card">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
                                     <h1>2</h1>
                                 </div>
-
                                 <div class="section-results-card-identification">
-                                    <h2>EY - Joao Pilot de Enduro - 10</h2>
+                                    <h2>EJ - CAETANO MANOEL FIORIO - 136</h2>
                                 </div>
                             </div> <!-- content row -->
-
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">
-                                    v1 - 00:08:10.54<br>
-                                    V2 - 00:00:00.00
-                                </div>
+                                <div class="section-results-card-content-col">V1 - 00:13:40,07 <br>V2 - 00:13:23,21</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:08:10.54</h2>
-                                        <h4>00:00:00</h4>
+                                        <h2>00:27:03,28</h2>
+                                        <h4 class="dif"> dif. 00:00:39,91</h4>
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- card content -->
+                        </div>
                     </div>
-
                     <div class="section-results-list-card">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
                                     <h1>3</h1>
                                 </div>
-
                                 <div class="section-results-card-identification">
-                                    <h2>EJ - Joao Piloto d Junior - 15</h2>
+                                    <h2>E25 - VALDINEI MANSKE - 174</h2>
                                 </div>
                             </div> <!-- content row -->
-
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">
-                                    v1 - 00:08:10.54<br>
-                                    V2 - 00:00:00.00
-                                </div>
+                                <div class="section-results-card-content-col">V1 - 00:13:52,56 <br>V2 - 00:13:21,47</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:08:10.54</h2>
-                                        <h4>00:00:00</h4>
+                                        <h2>00:27:14,03</h2>
+                                        <h4 class="dif"> dif. 00:00:50,66</h4>
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- card content -->
+                        </div>
                     </div>
-                </div>
-
-            </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>4</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>EJ - SAVIO RAMOS PINTO - 179</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:13:42,45 <br>V2 - 00:13:37,37</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:27:19,82</h2>
+                                        <h4 class="dif"> dif. 00:00:56,45</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>5</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - ARLEYSON BRAGA SANTOS - 137</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:13:31,47 <br>V2 - 00:13:52,31</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:27:23,78</h2>
+                                        <h4 class="dif"> dif. 00:01:00,41</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>6</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>EJ - GABRIEL MANSKE HOLZ - 192</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:13:55,61 <br>V2 - 00:13:44,24</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:27:39,85</h2>
+                                        <h4 class="dif"> dif. 00:01:16,48</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>7</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - MARCOS VINICIOS FRAISLEBEM - 177</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:13:59,06 <br>V2 - 00:13:50,01</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:27:49,07</h2>
+                                        <h4 class="dif"> dif. 00:01:25,70</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>8</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - DANIEL DA SILVA BRANDÃO - 138</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:03,25 <br>V2 - 00:13:56,23</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:27:59,48</h2>
+                                        <h4 class="dif"> dif. 00:01:36,11</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>9</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - CARLOS GERMANO BUSS COIMBRA - 191</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:09,54 <br>V2 - 00:13:52,18</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:28:01,72</h2>
+                                        <h4 class="dif"> dif. 00:01:38,35</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>10</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E40 - CLEVERTON WILL - 173</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:33,43 <br>V2 - 00:14:00,08</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:28:33,51</h2>
+                                        <h4 class="dif"> dif. 00:02:10,14</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>11</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E30 - LUCAS KOEHLER DELPUPO - 198</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:15,39 <br>V2 - 00:14:19,50</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:28:34,89</h2>
+                                        <h4 class="dif"> dif. 00:02:11,52</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>12</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E40 - ROGÉRIO VIDAL MAZOCO - 171</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:19,20 <br>V2 - 00:14:26,55</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:28:45,75</h2>
+                                        <h4 class="dif"> dif. 00:02:22,38</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>13</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - RODOLFO CARLOS ULIG BELING - 176</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:21,22 <br>V2 - 00:14:27,27</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:28:48,49</h2>
+                                        <h4 class="dif"> dif. 00:02:25,12</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>14</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E30 - CLAUDINEI LOPES DE SOUZA - 139</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:47,63 <br>V2 - 00:14:12,31</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:28:59,94</h2>
+                                        <h4 class="dif"> dif. 00:02:36,57</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>15</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>EJ - TIAGO MANSKE - 182</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:41,56 <br>V2 - 00:14:38,06</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:29:19,62</h2>
+                                        <h4 class="dif"> dif. 00:02:56,25</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>16</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E35 - VALERIO DE AGUIAR EFFGEN - 140</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:44,43 <br>V2 - 00:14:41,09</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:29:25,52</h2>
+                                        <h4 class="dif"> dif. 00:03:02,15</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>17</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E40 - LUCAS PLASTER - 180</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:43,29 <br>V2 - 00:14:56,49</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:29:39,78</h2>
+                                        <h4 class="dif"> dif. 00:03:16,41</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>18</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E30 - MURILO SANTOS SILVA - 185</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:03,05 <br>V2 - 00:14:50,14</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:29:53,19</h2>
+                                        <h4 class="dif"> dif. 00:03:29,82</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>19</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E40 - ADONIAS PETTER - 175</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:00,43 <br>V2 - 00:15:04,01</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:30:04,44</h2>
+                                        <h4 class="dif"> dif. 00:03:41,07</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>20</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>EJ - LENONN DANIEL DIAS BRAGA - 181</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:20,20 <br>V2 - 00:14:57,42</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:30:17,62</h2>
+                                        <h4 class="dif"> dif. 00:03:54,25</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>21</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E40 - JULIO CESAR BELIZARIO DUARTE - 178</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:27,23 <br>V2 - 00:14:57,39</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:30:24,62</h2>
+                                        <h4 class="dif"> dif. 00:04:01,25</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>22</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>EJ - JEAN TONOLI - 202</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:56,63 <br>V2 - 00:15:34,29</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:30:30,92</h2>
+                                        <h4 class="dif"> dif. 00:04:07,55</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>23</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E30 - ATAIDE HACKBART - 190</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:23,31 <br>V2 - 00:15:18,29</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:30:41,60</h2>
+                                        <h4 class="dif"> dif. 00:04:18,23</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>24</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E30 - CECILIANO FLEGLER - 189</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:34,43 <br>V2 - 00:15:25,10</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:30:59,53</h2>
+                                        <h4 class="dif"> dif. 00:04:36,16</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>25</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E30 - JOSÉ RICARDO REBLIN DE SOUZA - 197</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:34,06 <br>V2 - 00:15:51,32</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:31:25,38</h2>
+                                        <h4 class="dif"> dif. 00:05:02,01</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>26</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - JONATAS SILVA KELLER - 196</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:16:04,38 <br>V2 - 00:15:29,55</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:31:33,93</h2>
+                                        <h4 class="dif"> dif. 00:05:10,56</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>27</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>EJ - RICARDO BONELA FALQUETTO - 184</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:58,45 <br>V2 - 00:15:57,49</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:31:55,94</h2>
+                                        <h4 class="dif"> dif. 00:05:32,57</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>28</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - JOAO VICTOR BATISTA DELPUPO - 195</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:39,21 <br>V2 - 00:16:18,06</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:31:57,27</h2>
+                                        <h4 class="dif"> dif. 00:05:33,90</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>29</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E35 - LUCAS EMANUEL THOMAZ PIMENTA - 187</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:49,33 <br>V2 - 00:16:15,26</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:32:04,59</h2>
+                                        <h4 class="dif"> dif. 00:05:41,22</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>30</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>EJ - MATEUS RONCETTE GARCIA - 193</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:16:24,32 <br>V2 - 00:16:24,23</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:32:48,55</h2>
+                                        <h4 class="dif"> dif. 00:06:25,18</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>31</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>EJ - CARLOS EMANUEL ARAUJO MARTINS - 201</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:15:49,43 <br>V2 - 00:17:37,16</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:33:26,59</h2>
+                                        <h4 class="dif"> dif. 00:07:03,22</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>32</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E35 - MAGNO ANTIONIO DAVEL - 199</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:17:25,62 <br>V2 - 00:16:44,14</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:34:09,76</h2>
+                                        <h4 class="dif"> dif. 00:07:46,39</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>33</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E40 - ROGERIO SANTOS - 200</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:18:22,05 <br>V2 - 00:17:03,06</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:35:25,11</h2>
+                                        <h4 class="dif"> dif. 00:09:01,74</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>34</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E35 - SIMAO HARDEVICKE - 186</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:17:48,12 <br>V2 - 00:17:39,06</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:35:27,18</h2>
+                                        <h4 class="dif"> dif. 00:09:03,81</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>35</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - WARLEY FIGUEIREDO DE VARGAS - 183</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:19:10,29 <br>V2 - 00:17:07,15</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>00:36:17,44</h2>
+                                        <h4 class="dif"> dif. 00:09:54,07</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>36</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - WAIANK DELPUPO VIEIRA - 172</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - 00:14:11,34 <br>V2 - NC</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>NC</h2>
+                                        <h4 class="dif"> dif. 00:12:11,97</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>37</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - JEFERSON DOS SANTOS SOUZA - 188</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - NC <br>V2 - NC</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>NC</h2>
+                                        <h4 class="dif"> dif. </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>38</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <h2>E25 - BRUNO CASTELUBER GALIMBERTI - 194</h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">V1 - NP <br>V2 - NP</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2>NP</h2>
+                                        <h4 class="dif"> dif. 00:00:00,00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div> 
+        </main>
     </div>
-    </main>
-
-    <!-- <footer> 
-        <div class="footer-endereco">
-            <h1>CRONO RESULTS SISTEMAS</h1>
-            <p>Rua Washington Luís, 121</p>
-            <p>Jardim América - CARIACICA - ES</p>
-            <p>CEP: 29140-350</p>
-        </div>
-
-        <div class="footer-contato">
-            <h1>CONTATO</h1>
-            <p>douglas ramos</p>
-            <p style="text-transform: none;">douglasramos@cronoresults.com.br</p>
-            <p>(27) - 99932-9914</p>
-        </div>
-    </footer> -->
-
-    </div>
-</body>
-
-</html>
+  </body>
+</html>                           

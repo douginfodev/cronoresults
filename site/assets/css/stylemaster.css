@@ -123,6 +123,11 @@ input {
     color: var(--buttons-colors);
 }
 
+#btn-outline-disabled{
+    border-color: var(--border-card-color);
+    color: var(--buttons-text-colors);   
+}
+
 input {
     background-image: var(--bck-layout);
     cursor: default;

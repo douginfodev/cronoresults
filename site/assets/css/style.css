@@ -71,8 +71,8 @@ section.section-display{
     height: 400px;
     border-radius: var(--border-radius);
     background-image: var(--md-ref-foreground-image);
-    border: 1px solid;
-    border-color: var(--border-card-color);
+    /* border: 1px solid; */
+    /* border-color: var(--border-card-color); */
     margin-bottom: var(--spacing-section);
 }
 

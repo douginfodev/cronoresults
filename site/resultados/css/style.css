@@ -4,15 +4,24 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1920px) {
 
 h1,
 h2 {
     padding: 4px;
 }
 
+h4.dif{
+  color: white;
+  font-weight: 400;
+  font-style: italic;  
+}
+
 .container{
+    width: 100%;
     height: auto;
+    min-width: 390px;
+    max-width: 1900px;
 }
 
 main{
@@ -24,20 +33,21 @@ main{
 section{
     height: auto;
 }
+
 section.section-display {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 4px;
-    min-width: 380px;
+    padding: 8px;
+    min-width: 390px;
     border: none;
 }
 
-.display-events {
+section .display-events {
     width: 100%;
-    height: 100px;
+    height: inherit;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -45,41 +55,46 @@ section.section-display {
 }
 
 .display-events-col-brand {
-    width: 30%;
-    height: 120px;
+    width: 20%;
+    height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .display-events-col-brand img {
-    width: auto;
-    height: 70%;
+    width: 120px;
+    height: auto;
     padding: 4px;
 }
 
-.display-events-col {
-    width: 70%;
+section .display-events-col{
+    width: 80%;
     height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-left: 5px;
 }
 
-.display-events-buttons {
+section .display-events-buttons {
     width: 100%;
     height: 70px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
 }
 
 .btn-outline {
-    width: 90%;
+    width: 90%; 
 }
 
 /* LIST CARD */
 
 .section-eventos{
-    width: 100%;
-    height: 200px;
+    width: 98%;
+    height: inherit;
 }
 
 .section-eventos-linha {
@@ -101,6 +116,7 @@ section.section-display {
     padding-right: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
+    border-bottom: 2px solid #18F65F;
     background-color: var(--md-ref-foreground-color);
     background-image: url('../../assets/img/foreground-color.png');
 }
@@ -110,29 +126,34 @@ section.section-display {
     height: 140px;
     display: flex;
     flex-direction: column;
-    
 }
 
 
 .section-results-card-content-row {
     width:  100%;
-    height: 60px;
+    height: 65px;
     display: flex;
     justify-content: start;
     gap: 8px;
 }
 
 .section-results-card-position {
-    width: 15%;
+    width: 62px;
     height: 50px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    background-color: var(--h1-colors);
+    border-radius: 15px;
+    padding: 2px;
+    border: 1px solid white;
+    color:black;
 }
 
 .section-results-card-position h1{
   font-size: 2.8rem;
   font-weight: 700;
+  color: black;
 }
 
 .section-results-card-identification {
@@ -145,8 +166,9 @@ section.section-display {
 
 
 .section-results-card-identification h2 {
-   font-size: var(--md-sys-typescale-headline-size);
-   font-weight: 700;
+   font-size: 2.2rem;
+   font-weight: 400;
+   color: var(--text-colors);
 }
 
 
@@ -187,6 +209,6 @@ section.section-display {
 .section-results-card-result-col h2{
     color: var(--text-colors);
     font-weight: 700;
-    font-size: 2.0rem;
+    font-size: 2.4rem;
 } 
 }                            

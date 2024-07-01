@@ -38,10 +38,25 @@ p.display-sistema-descricao{
     line-height: 60px;
 }
 
-
+ol{
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
 
 ol li{
+    display: flex;
+    width:100%;
+    height: 50px;
     font-size: 1.8rem;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
@@ -279,7 +294,7 @@ section.section-display{
      gap: 10px;
      width: 33%;
      min-width: 320px;
-     height: 380px;
+     height: 680px;
      margin: 20px;
      margin-left: 30PX;
      margin-right: 30PX;
@@ -335,7 +350,7 @@ section.section-display{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 110px;
+    height: 400px;
     margin-bottom: 8px;
     padding: var(--padding-default);    
 }
@@ -359,9 +374,7 @@ ol li{
 @media only screen and (max-width: 1200px) {
   .container{
     width: 100%;
-    height: 1200px;
-    margin-left:  var(--margin-mediun-expanded);
-    margin-right: var(--margin-mediun-expanded);
+    height: auto;
   }
 
   main{
@@ -383,10 +396,12 @@ p.display-sistema-descricao{
   .section-eventos,
   .section-eventos-linha{
     justify-content: space-around;
+    height: auto;
+    gap: 8px;
   }
 
   .section-sobre{
-   height: 620px;
+   height: auto;
   }
 
   .section-sobre-colunas1,
@@ -406,13 +421,12 @@ p.display-sistema-descricao{
   }
 
   .display-calendario{
-    display: block;
-    width: 45%;
-    font-size: var(--md-sys-typescale-title-small-size);
+    display: none;
   }
 
   .display-events{
-    width: 60%;
+    width: 100%;
+    height: auto;
     display: flex;
   }
 
@@ -422,9 +436,16 @@ p.display-sistema-descricao{
 
   .section-eventos-card{
     width: 50%;
-    height: 420px;
+    height: 680px;
+    margin: 4px;
     margin-bottom: var(--spacing-section);
   }
+
+  .section-eventos-card-info{
+    /* align-items: center; */
+    justify-content: start;
+    height: 400px;
+   }
 
   footer{
     width: 100%;
@@ -457,12 +478,12 @@ p.display-sistema-descricao{
    .container{
      width: 100%;
      height: 2380px;
-     margin-left:  var(--margin-compact);
-     margin-right: var(--margin-compact);
+     /* margin-left:  var(--margin-compact);
+     margin-right: var(--margin-compact); */
    } 
 
  main{
-    height: 2150px;
+    height: auto;
     /* padding: var(--padding-default); */
  }
 
@@ -472,20 +493,24 @@ p.display-sistema-descricao{
   border-radius: var(--border-radius);
 }
 
- .display-events{
-    width: 100%;
-    height: 700px;
+section .display-events{
+    width: 100%; 
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     border: none;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    margin:0;
   }
 
-  .display-events-col{
+  section .display-events-col{
     width: 100%;
-    height: 500px;
+    height: auto;
     border: none;
+    margin-bottom: 8px;
   }
 
   .display-events img{
@@ -497,6 +522,7 @@ p.display-sistema-descricao{
     width: 100%;
     flex-direction: column;
     height: 1150px;
+    /* max-height: 1150px; */
     align-content: center;
     margin-bottom: var(--padding-default);
     padding: var(--padding-default);
@@ -534,23 +560,28 @@ p.display-sistema-descricao{
     text-align: center;
   }
 
-  .display-calendario{
+  section .display-calendario{
     width: 98%;
     display: flex;
     flex-direction: column;
     border: none;
   }
 
+  section .display-calendario h1{
+     padding: 8px;
+  }
+
   .calendario-row{
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
   }
 
   .section-eventos{
     margin:0;
     width: 98%;
-    height: 1000px;
+    height: 1450px;
     flex-direction: column;
   }
 
@@ -568,7 +599,7 @@ p.display-sistema-descricao{
 
   .section-eventos-card{
     width: 100%;
-    height: 420px;
+    height: auto;
     margin-bottom: var(--spacing-section);
   }
 

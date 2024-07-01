@@ -1,0 +1,10 @@
+
+/* Table: CAMPEONATOS FIM, Owner: SYSDBA */
+
+CREATE TABLE "FIM_CAMPEONATOS" 
+(
+  "id"	            INTEGER NOT NULL,
+  "nome"	        VARCHAR(70) NOT NULL,
+  "numero_etapas"	INTEGER NOT NULL,
+ CONSTRAINT "PK_FIM_CAMPEONATOS" PRIMARY KEY ("id")
+);

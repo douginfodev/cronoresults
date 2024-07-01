@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/stylemaster.css" />
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylemaster.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleclassif.css" />
     <meta name="Description" content="Crono Results - Software de computação de tempos de competições de 
 Enduro F.I.M. e Rally de Velocidade">
-    <meta name="author" content="Douglas Ramos - Cronoresults Sistemas">
+    <meta name="author" content="Douglas  Ramos - Cronoresults Sistemas">
     <meta name="robots" content="index,follow">
-    <title>Crono Results - Resultados Online</title>
+    <title>Crono Results - Classificação Online</title>
 </head>
 
 <body>
@@ -34,30 +34,32 @@ Enduro F.I.M. e Rally de Velocidade">
                         <img src="../assets/img/logo_ctac.png" alt="Logo Enduro CTAC 2024">
                     </div>
                     <div class="display-events-col">
-                        <h2 tabindex="0">1ª etapa</h2>
-                        <h2 tabindex="0">circuito plaster</h2>
-                        <h2>resultados on line</h2>
+                        <h2 tabindex="0">Enduro CTAC 2024</h2>
+                        <h2 tabindex="0">1ª Etapa</h2>
+                        <h2>classificação</h2>
                     </div>
                 </div>
 
                 <div class="display-events-buttons">
                     <a href=""><button class="btn-outline">geral</button></a>
-                    <div class="categories">
+                    <a href=""><button class="btn-outline" id="btn-outline-disabled">categorias</button></a>
+                    
+                    <!-- <div class="categories"> 
                         <h2>cat.</h2>
                     </div>
                     <div class="select-categories">
-                        <select name="category" id="selectcategory"
-                         onchange="filterDropDown()">
+                        <select name="category" id="selectcategory" onchange="filterDropDown()">
                             <option value="ED">Todas</option>
                             <option value="EI">EI</option>
                             <option value="EJ">EJ</option>
+                            <option value="EY">EY</option>
                             <option value="E25">E25</option>
                             <option value="E30">E30</option>
                             <option value="E35">E35</option>
                             <option value="E40">E40</option>
                             <option value="E45">E45</option>
-                          </select>
-                    </div>
+                        </select>
+                    </div>-->
                 </div>
             </section>
 
@@ -67,23 +69,28 @@ Enduro F.I.M. e Rally de Velocidade">
                     <h1>geral</h1>
                 </div>
                 <div class="section-eventos-linha">
-                    <div class="filterDiv" id="section-results-list-card" style="display: flex;">
+                    <div class="filterDiv" id="section-results-list-card">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>1</h1>
+                                    <h1>1º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>JOAO MARCOS SANTANA DE SOUZA DIAS - 135</h2>
+                                    <h2>JOAO MARCOS SANTANA DE SOUZA DIAS<br><span class="cidade">AFONSO CLÁUDIO -
+                                            ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:13:17,24 <br>V2 - 00:13:06,13</div>
+                                <div class="section-results-card-content-col">1º<br>25</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:26:23,37</h2>
-                                        <h4 class="dif"> dif. 00:00:00,00</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>25</h2>
                                     </div>
                                 </div>
                             </div>
@@ -93,19 +100,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>2</h1>
+                                    <h1>2º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>CAETANO MANOEL FIORIO - 136</h2>
+                                    <h2>CAETANO MANOEL FIORIO NETTO<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:13:40,07 <br>V2 - 00:13:23,21</div>
+                                <div class="section-results-card-content-col">1º<br>22</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:27:03,28</h2>
-                                        <h4 class="dif"> dif. 00:00:39,91</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>22</h2>
                                     </div>
                                 </div>
                             </div>
@@ -115,19 +127,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>3</h1>
+                                    <h1>3º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>VALDINEI MANSKE - 174</h2>
+                                    <h2>VALDINEI MANSKE<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:13:52,56 <br>V2 - 00:13:21,47</div>
+                                <div class="section-results-card-content-col">1º<br>20</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:27:14,03</h2>
-                                        <h4 class="dif"> dif. 00:00:50,66</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>20</h2>
                                     </div>
                                 </div>
                             </div>
@@ -137,19 +153,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>4</h1>
+                                    <h1>4º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>SAVIO RAMOS PINTO - 179</h2>
+                                    <h2>SAVIO RAMOS<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:13:42,45 <br>V2 - 00:13:37,37</div>
+                                <div class="section-results-card-content-col">1º<br>18</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:27:19,82</h2>
-                                        <h4 class="dif"> dif. 00:00:56,45</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>18</h2>
                                     </div>
                                 </div>
                             </div>
@@ -159,19 +179,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>5</h1>
+                                    <h1>5º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>ARLEYSON BRAGA SANTOS - 137</h2>
+                                    <h2>ARLEYSON BRAGA SANTOS<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:13:31,47 <br>V2 - 00:13:52,31</div>
+                                <div class="section-results-card-content-col">1º<br>16</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:27:23,78</h2>
-                                        <h4 class="dif"> dif. 00:01:00,41</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>16</h2>
                                     </div>
                                 </div>
                             </div>
@@ -181,19 +205,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>6</h1>
+                                    <h1>6º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>GABRIEL MANSKE HOLZ - 192</h2>
+                                    <h2>GABRIEL MANSKE HOLZ<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:13:55,61 <br>V2 - 00:13:44,24</div>
+                                <div class="section-results-card-content-col">1º<br>15</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:27:39,85</h2>
-                                        <h4 class="dif"> dif. 00:01:16,48</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>15</h2>
                                     </div>
                                 </div>
                             </div>
@@ -203,19 +231,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>7</h1>
+                                    <h1>7º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>MARCOS VINICIOS FRAISLEBEM - 177</h2>
+                                    <h2>MARCOS VINICIUS FRAISLEBEM<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:13:59,06 <br>V2 - 00:13:50,01</div>
+                                <div class="section-results-card-content-col">1º<br>14</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:27:49,07</h2>
-                                        <h4 class="dif"> dif. 00:01:25,70</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>14</h2>
                                     </div>
                                 </div>
                             </div>
@@ -225,19 +258,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>8</h1>
+                                    <h1>8º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>DANIEL DA SILVA BRANDÃO - 138</h2>
+                                    <h2>DANIEL BRANDÃO<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:03,25 <br>V2 - 00:13:56,23</div>
+                                <div class="section-results-card-content-col">1º<br>13</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:27:59,48</h2>
-                                        <h4 class="dif"> dif. 00:01:36,11</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>13</h2>
                                     </div>
                                 </div>
                             </div>
@@ -247,19 +284,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>9</h1>
+                                    <h1>9º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>CARLOS GERMANO BUSS COIMBRA - 191</h2>
+                                    <h2>CARLOS GERMANO BUSS COIMBRA<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:09,54 <br>V2 - 00:13:52,18</div>
+                                <div class="section-results-card-content-col">1º<br>12</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:28:01,72</h2>
-                                        <h4 class="dif"> dif. 00:01:38,35</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>12</h2>
                                     </div>
                                 </div>
                             </div>
@@ -269,19 +311,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>10</h1>
+                                    <h1>10º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E40</div>
-                                    <h2>CLEVERTON WILL - 173</h2>
+                                    <h2>CLEVERTON WILL<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:33,43 <br>V2 - 00:14:00,08</div>
+                                <div class="section-results-card-content-col">1º<br>11</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:28:33,51</h2>
-                                        <h4 class="dif"> dif. 00:02:10,14</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>11</h2>
                                     </div>
                                 </div>
                             </div>
@@ -291,19 +337,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>11</h1>
+                                    <h1>11º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E30</div>
-                                    <h2>LUCAS KOEHLER DELPUPO - 198</h2>
+                                    <h2>LUCAS KOEHLER DELPUPO<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:15,39 <br>V2 - 00:14:19,50</div>
+                                <div class="section-results-card-content-col">1º<br>10</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:28:34,89</h2>
-                                        <h4 class="dif"> dif. 00:02:11,52</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>10</h2>
                                     </div>
                                 </div>
                             </div>
@@ -313,19 +363,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>12</h1>
+                                    <h1>12º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E40</div>
-                                    <h2>ROGÉRIO VIDAL MAZOCO - 171</h2>
+                                    <h2>ROGÉRIO VIDAL MAZOCO<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:19,20 <br>V2 - 00:14:26,55</div>
+                                <div class="section-results-card-content-col">1º<br>9</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:28:45,75</h2>
-                                        <h4 class="dif"> dif. 00:02:22,38</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>9</h2>
                                     </div>
                                 </div>
                             </div>
@@ -335,19 +389,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>13</h1>
+                                    <h1>13º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>RODOLFO CARLOS ULIG BELING - 176</h2>
+                                    <h2>RODOLFO CARLOS ULIG BELING<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:21,22 <br>V2 - 00:14:27,27</div>
+                                <div class="section-results-card-content-col">1º<br>8</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:28:48,49</h2>
-                                        <h4 class="dif"> dif. 00:02:25,12</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>8</h2>
                                     </div>
                                 </div>
                             </div>
@@ -357,19 +416,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>14</h1>
+                                    <h1>14º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E30</div>
-                                    <h2>CLAUDINEI LOPES DE SOUZA - 139</h2>
+                                    <h2>CLAUDINEI LOPES DE SOUZA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:47,63 <br>V2 - 00:14:12,31</div>
+                                <div class="section-results-card-content-col">1º<br>7</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:28:59,94</h2>
-                                        <h4 class="dif"> dif. 00:02:36,57</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>7</h2>
                                     </div>
                                 </div>
                             </div>
@@ -379,19 +442,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>15</h1>
+                                    <h1>15º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>TIAGO MANSKE - 182</h2>
+                                    <h2>TIAGO MANSK<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:41,56 <br>V2 - 00:14:38,06</div>
+                                <div class="section-results-card-content-col">1º<br>6</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:29:19,62</h2>
-                                        <h4 class="dif"> dif. 00:02:56,25</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>6</h2>
                                     </div>
                                 </div>
                             </div>
@@ -401,19 +468,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>16</h1>
+                                    <h1>16º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E35</div>
-                                    <h2>VALERIO DE AGUIAR EFFGEN - 140</h2>
+                                    <h2>VALERIO DE AGUIAR EFFGEN<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:44,43 <br>V2 - 00:14:41,09</div>
+                                <div class="section-results-card-content-col">1º<br>5</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:29:25,52</h2>
-                                        <h4 class="dif"> dif. 00:03:02,15</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>5</h2>
                                     </div>
                                 </div>
                             </div>
@@ -423,19 +494,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>17</h1>
+                                    <h1>17º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E40</div>
-                                    <h2>LUCAS PLASTER - 180</h2>
+                                    <h2>LUCAS PLASTER<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:43,29 <br>V2 - 00:14:56,49</div>
+                                <div class="section-results-card-content-col">1º<br>4</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:29:39,78</h2>
-                                        <h4 class="dif"> dif. 00:03:16,41</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>4</h2>
                                     </div>
                                 </div>
                             </div>
@@ -445,19 +520,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>18</h1>
+                                    <h1>18º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E30</div>
-                                    <h2>MURILO SANTOS SILVA - 185</h2>
+                                    <h2>MURILO SANTOS SILVA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:03,05 <br>V2 - 00:14:50,14</div>
+                                <div class="section-results-card-content-col">1º<br>3</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:29:53,19</h2>
-                                        <h4 class="dif"> dif. 00:03:29,82</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>3</h2>
                                     </div>
                                 </div>
                             </div>
@@ -467,19 +546,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>19</h1>
+                                    <h1>19º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E40</div>
-                                    <h2>ADONIAS PETTER - 175</h2>
+                                    <h2>ADONIAS PETTER<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:00,43 <br>V2 - 00:15:04,01</div>
+                                <div class="section-results-card-content-col">1º<br>2</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:30:04,44</h2>
-                                        <h4 class="dif"> dif. 00:03:41,07</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>2</h2>
                                     </div>
                                 </div>
                             </div>
@@ -489,19 +572,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>20</h1>
+                                    <h1>20º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>LENONN DANIEL DIAS BRAGA - 181</h2>
+                                    <h2>LENONN DANIEL DIAS BRAGA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:20,20 <br>V2 - 00:14:57,42</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:30:17,62</h2>
-                                        <h4 class="dif"> dif. 00:03:54,25</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -511,19 +598,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>21</h1>
+                                    <h1>21º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E40</div>
-                                    <h2>JULIO CESAR BELIZARIO DUARTE - 178</h2>
+                                    <h2>JULIO CESAR BELIZARIO DUARTE<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:27,23 <br>V2 - 00:14:57,39</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:30:24,62</h2>
-                                        <h4 class="dif"> dif. 00:04:01,25</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -533,19 +625,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>22</h1>
+                                    <h1>22º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>JEAN TONOLI - 202</h2>
+                                    <h2>JEAN TONOLI<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:56,63 <br>V2 - 00:15:34,29</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:30:30,92</h2>
-                                        <h4 class="dif"> dif. 00:04:07,55</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -555,19 +651,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>23</h1>
+                                    <h1>23º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E30</div>
-                                    <h2>ATAIDE HACKBART - 190</h2>
+                                    <h2>ATAIDE HACKBARTH<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:23,31 <br>V2 - 00:15:18,29</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:30:41,60</h2>
-                                        <h4 class="dif"> dif. 00:04:18,23</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -577,19 +677,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>24</h1>
+                                    <h1>24º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E30</div>
-                                    <h2>CECILIANO FLEGLER - 189</h2>
+                                    <h2>CECILIANO FLEGLER<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:34,43 <br>V2 - 00:15:25,10</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:30:59,53</h2>
-                                        <h4 class="dif"> dif. 00:04:36,16</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -599,19 +703,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>25</h1>
+                                    <h1>25º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E30</div>
-                                    <h2>JOSÉ RICARDO REBLIN DE SOUZA - 197</h2>
+                                    <h2>JOSÉ RICARDO REBLIN DE SOUZA<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:34,06 <br>V2 - 00:15:51,32</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:31:25,38</h2>
-                                        <h4 class="dif"> dif. 00:05:02,01</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -621,19 +730,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>26</h1>
+                                    <h1>26º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>JONATAS SILVA KELLER - 196</h2>
+                                    <h2>JONATAS SILVA KELLER<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:16:04,38 <br>V2 - 00:15:29,55</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:31:33,93</h2>
-                                        <h4 class="dif"> dif. 00:05:10,56</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -643,19 +756,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>27</h1>
+                                    <h1>27º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>RICARDO BONELA FALQUETTO - 184</h2>
+                                    <h2>RICARDO FALQUETTO<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:58,45 <br>V2 - 00:15:57,49</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:31:55,94</h2>
-                                        <h4 class="dif"> dif. 00:05:32,57</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -665,19 +782,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>28</h1>
+                                    <h1>28º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>JOAO VICTOR BATISTA DELPUPO - 195</h2>
+                                    <h2>JOAO VICTOR BATISTA DELPUPO<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:39,21 <br>V2 - 00:16:18,06</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:31:57,27</h2>
-                                        <h4 class="dif"> dif. 00:05:33,90</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -687,19 +809,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>29</h1>
+                                    <h1>29º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E35</div>
-                                    <h2>LUCAS EMANUEL THOMAZ PIMENTA - 187</h2>
+                                    <h2>LUCAS EMANUEL THOMAZ PIMENTA <br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:49,33 <br>V2 - 00:16:15,26</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:32:04,59</h2>
-                                        <h4 class="dif"> dif. 00:05:41,22</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -709,19 +836,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>30</h1>
+                                    <h1>30º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>MATEUS RONCETTE GARCIA - 193</h2>
+                                    <h2>MATEUS RONCETTE GARCIA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:16:24,32 <br>V2 - 00:16:24,23</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:32:48,55</h2>
-                                        <h4 class="dif"> dif. 00:06:25,18</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -731,19 +862,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>31</h1>
+                                    <h1>31º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">EJ</div>
-                                    <h2>CARLOS EMANUEL ARAUJO MARTINS - 201</h2>
+                                    <h2>CARLOS EMANUEL ARAUJO MARTINS<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:15:49,43 <br>V2 - 00:17:37,16</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:33:26,59</h2>
-                                        <h4 class="dif"> dif. 00:07:03,22</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -753,19 +889,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>32</h1>
+                                    <h1>32º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E35</div>
-                                    <h2>MAGNO ANTIONIO DAVEL - 199</h2>
+                                    <h2>MAGNO ANTONIO DAVEL<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:17:25,62 <br>V2 - 00:16:44,14</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:34:09,76</h2>
-                                        <h4 class="dif"> dif. 00:07:46,39</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -775,19 +915,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>33</h1>
+                                    <h1>33º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E40</div>
-                                    <h2>ROGERIO SANTOS - 200</h2>
+                                    <h2>ROGERIO SANTOS<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:18:22,05 <br>V2 - 00:17:03,06</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:35:25,11</h2>
-                                        <h4 class="dif"> dif. 00:09:01,74</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -797,19 +941,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>34</h1>
+                                    <h1>34º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E35</div>
-                                    <h2>SIMAO HARDEVICKE - 186</h2>
+                                    <h2>SIMAO HARDEVICKE<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:17:48,12 <br>V2 - 00:17:39,06</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:35:27,18</h2>
-                                        <h4 class="dif"> dif. 00:09:03,81</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -819,19 +967,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>35</h1>
+                                    <h1>35º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>WARLEY FIGUEIREDO DE VARGAS - 183</h2>
+                                    <h2>WARLEY FIGUEIREDO DE VARGAS<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:19:10,29 <br>V2 - 00:17:07,15</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>00:36:17,44</h2>
-                                        <h4 class="dif"> dif. 00:09:54,07</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -841,19 +994,23 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>36</h1>
+                                    <h1>36º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>WAIANK DELPUPO VIEIRA - 172</h2>
+                                    <h2>WAIANK DELPUPO VIEIRA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - 00:14:11,34 <br>V2 - NC</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>NC</h2>
-                                        <h4 class="dif"> dif. 00:12:11,97</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -863,19 +1020,24 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>37</h1>
+                                    <h1>37º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>JEFERSON DOS SANTOS SOUZA - 188</h2>
+                                    <h2>JEFERSON DOS SANTOS SOUZA<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - NC <br>V2 - NC</div>
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>NC</h2>
-                                        <h4 class="dif"> dif. </h4>
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
                                     </div>
                                 </div>
                             </div>
@@ -885,28 +1047,26 @@ Enduro F.I.M. e Rally de Velocidade">
                         <div class="section-results-card-content">
                             <div class="section-results-card-content-row">
                                 <div class="section-results-card-position">
-                                    <h1>38</h1>
+                                    <h1>38º</h1>
                                 </div>
                                 <div class="section-results-card-identification">
                                     <div class="spancategory">E25</div>
-                                    <h2>BRUNO CASTELUBER GALIMBERTI - 194</h2>
+                                    <h2>BRUNO CASTELUBER GALIMBERTI<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
                                 </div>
                             </div> <!-- content row -->
                             <div class="section-results-card-content-row">
-                                <div class="section-results-card-content-col">V1 - NP <br>V2 - NP</div>
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">6º<br>0</div>
                                 <div id="section-results-card-content-col" class="section-results-card-content-col">
                                     <div class="section-results-card-result-col">
-                                        <h2>NP</h2>
-                                        <h4 class="dif"> dif. 00:00:00,00</h4>
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-               </div>
-            </div> 
-        </main>
-    </div>
-     <script src="../assets/js/script.js"></script>
-  </body>
-</html>                           

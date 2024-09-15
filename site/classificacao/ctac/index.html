@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/stylemaster.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styleclassif.css" />
+    <meta name="Description" content="Crono Results - Software de computação de tempos de competições de 
+Enduro F.I.M. e Rally de Velocidade">
+    <meta name="author" content="Douglas  Ramos - Cronoresults Sistemas">
+    <meta name="robots" content="index,follow">
+    <title>Crono Results - Classificação Online</title>
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <a href="https://www.cronoresults.com.br">
+                <div class="brand">
+                    <img tabindex="0" src="../../assets/img/logo_cronoresults.png" alt="CronoResults Sistemas" />
+                </div>
+            </a>
+        </header>
+
+        <main>
+            <section class="section-display">
+                <div class="display-events">
+                    <div class="display-events-col-brand">
+                        <img src="../../assets/img/logo_ctac.png" alt="Logo Enduro CTAC 2024">
+                    </div>
+                    <div class="display-events-col">
+                        <h2 tabindex="0">Enduro CTAC 2024</h2>
+                        <h2 tabindex="0">3ª Etapa</h2>
+                        <h2>classificação online</h2>
+                    </div>
+                </div>
+
+                <div class="display-events-buttons">
+                    <a href=""><button class="btn-outline">geral</button></a>
+                    <div class="categories">
+                        <h2>cat.</h2>
+                    </div>
+                    <div class="select-categories">
+                        <select name="category" id="selectcategory" onchange="filterDropDown()">
+                            <option value="ED">Todas</option>
+                            <option value="EI">EI</option>
+                            <option value="EJ">EJ</option>
+                            <option value="EY">EY</option>
+                            <option value="E25">E25</option>
+                            <option value="E30">E30</option>
+                            <option value="E35">E35</option>
+                            <option value="E40">E40</option>
+                            <option value="E45">E45</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION EVENTOS -->
+            <div class="section-eventos">
+                <div class="section-eventos-titulo">
+                    <h1>geral</h1>
+                </div>
+                <div class="section-eventos-linha">
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>1º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>GABRIEL MANSKE HOLZ<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>15</div>
+                                <div class="section-results-card-content-col">2º<br>22</div>
+                                <div class="section-results-card-content-col">3º<br>22</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>59</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>2º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>WAIANK DELPUPO VIEIRA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>16</div>
+                                <div class="section-results-card-content-col">3º<br>25</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>42</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>3º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>VALDINEI MANSKE<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>20</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>20</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>40</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>4º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E40</div>
+                                    <h2>ROGÃ‰RIO VIDAL MAZOCO<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>9</div>
+                                <div class="section-results-card-content-col">2º<br>15</div>
+                                <div class="section-results-card-content-col">3º<br>16</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>40</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>5º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E30</div>
+                                    <h2>MARCOS VINICIUS FRAISLEBEM<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>14</div>
+                                <div class="section-results-card-content-col">2º<br>25</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>39</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>6º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>ARLEYSON BRAGA SANTOS<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>16</div>
+                                <div class="section-results-card-content-col">2º<br>18</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>34</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>7º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E30</div>
+                                    <h2>LUCAS KOEHLER DELPUPO<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>10</div>
+                                <div class="section-results-card-content-col">2º<br>20</div>
+                                <div class="section-results-card-content-col">3º<br>1</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>31</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>8º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>MURILO SANTOS SILVA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>3</div>
+                                <div class="section-results-card-content-col">2º<br>12</div>
+                                <div class="section-results-card-content-col">3º<br>15</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>30</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>9º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E40</div>
+                                    <h2>LUCAS PLASTER<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>4</div>
+                                <div class="section-results-card-content-col">2º<br>11</div>
+                                <div class="section-results-card-content-col">3º<br>12</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>27</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>10º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>JOAO MARCOS SANTANA DE SOUZA DIAS<br><span class="cidade">AFONSO CLÁUDIO -
+                                            ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>25</div>
+                                <div class="section-results-card-content-col">2º<br>1</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>26</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>11º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>JONATAS SILVA KELLER<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>9</div>
+                                <div class="section-results-card-content-col">3º<br>14</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>24</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>12º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>DANIEL DA SILVA BRANDÃƒO<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>13</div>
+                                <div class="section-results-card-content-col">2º<br>10</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>23</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>13º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E40</div>
+                                    <h2>ADONIAS PETTER<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>2</div>
+                                <div class="section-results-card-content-col">2º<br>2</div>
+                                <div class="section-results-card-content-col">3º<br>18</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>22</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>14º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>RODOLFO CARLOS ULIG BELING<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>8</div>
+                                <div class="section-results-card-content-col">2º<br>13</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>21</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>15º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E35</div>
+                                    <h2>VALERIO DE AGUIAR EFFGEN<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>5</div>
+                                <div class="section-results-card-content-col">2º<br>14</div>
+                                <div class="section-results-card-content-col">3º<br>1</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>20</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>16º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E30</div>
+                                    <h2>CECILIANO FLEGLER<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>5</div>
+                                <div class="section-results-card-content-col">3º<br>13</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>19</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>17º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E35</div>
+                                    <h2>LUCAS EMANUEL THOMAZ PIMENTA<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>4</div>
+                                <div class="section-results-card-content-col">3º<br>11</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>16</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>18º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>LENONN DANIEL DIAS BRAGA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>9</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>10</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>19º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>MAYCON AGUIAR<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>10</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>10</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>20º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E30</div>
+                                    <h2>JOSÃ‰ RICARDO REBLIN DE SOUZA<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>7</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>8</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>21º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E30</div>
+                                    <h2>RODRIGO SCHULTZ<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>8</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>8</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>22º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>MIGUEL SPAMER GERING<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>8</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>8</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>23º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>TIAGO MANSK<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>6</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>1</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>7</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>24º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>JEFERSON DOS SANTOS SOUZA<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>6</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>7</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>25º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>JOAO VICTOR BATISTA DELPUPO<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>3</div>
+                                <div class="section-results-card-content-col">3º<br>1</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>5</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>26º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>WEBERSON GALVANI<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>1</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>27º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E30</div>
+                                    <h2>RENAN ELLER<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>1</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>28º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E40</div>
+                                    <h2>ANDRE AUGUSTO ALVES<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>1</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>29º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>RAYSLAN DA SILVA SCHULTZ<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>1</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>30º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E30</div>
+                                    <h2>ANDRE BUECKE VELTEN<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>1</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>1</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>31º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>CAETANO MANOEL FIORIO NETTO<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>22</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>32º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>SAVIO RAMOS<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>18</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>33º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>CARLOS GERMANO BUSS COIMBRA<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>12</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>34º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E40</div>
+                                    <h2>CLEVERTON WILL<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>11</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>35º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E30</div>
+                                    <h2>CLAUDINEI LOPES DE SOUZA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>7</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>36º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E40</div>
+                                    <h2>JULIO CESAR BELIZARIO DUARTE<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>37º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>JEAN TONOLI<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>38º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E30</div>
+                                    <h2>ATAIDE HACKBARTH<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>39º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>RICARDO FALQUETTO<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>40º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>MATEUS RONCETTE GARCIA<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>41º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">EJ</div>
+                                    <h2>CARLOS EMANUEL ARAUJO MARTINS<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>42º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E35</div>
+                                    <h2>MAGNO ANTONIO DAVEL<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>43º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E40</div>
+                                    <h2>ROGERIO SANTOS<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>44º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E35</div>
+                                    <h2>SIMAO HARDEVICKE<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>45º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>WARLEY FIGUEIREDO DE VARGAS<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>1</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>46º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E25</div>
+                                    <h2>BRUNO CASTELUBER GALIMBERTI<br><span class="cidade">AFONSO CLÁUDIO - ES</span>
+                                    </h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv" id="section-results-list-card">
+                        <div class="section-results-card-content">
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-position">
+                                    <h1>47º</h1>
+                                </div>
+                                <div class="section-results-card-identification">
+                                    <div class="spancategory">E35</div>
+                                    <h2>ELCIO LOURENCO MENDES<br><span class="cidade">AFONSO CLÁUDIO - ES</span></h2>
+                                </div>
+                            </div> <!-- content row -->
+                            <div class="section-results-card-content-row">
+                                <div class="section-results-card-content-col">1º<br>0</div>
+                                <div class="section-results-card-content-col">2º<br>0</div>
+                                <div class="section-results-card-content-col">3º<br>0</div>
+                                <div class="section-results-card-content-col">4º<br>0</div>
+                                <div class="section-results-card-content-col">5º<br>0</div>
+                                <div class="section-results-card-content-col">Descarte<br>0</div>
+                                <div id="section-results-card-content-col" class="section-results-card-content-col">
+                                    <div class="section-results-card-result-col">
+                                        <h2 style="text-align:center;">TOTAL<br>0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../../../assets/js/script.js"></script>
+</body>
+
+</html

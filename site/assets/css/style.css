@@ -623,6 +623,20 @@ section .display-events{
     display: none;
   }
 
+  #spanpontoscat{
+    display: none;
+  }
+
+  #spanpontosger{
+    display: flex;
+  }
+
+  .section-results-card-content-col{
+    display: flex;
+    justify-content: center;  
+  }
+
+
   footer{
     width: 100%;
     height: 330px;

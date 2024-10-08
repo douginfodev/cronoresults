@@ -137,7 +137,8 @@ section.section-display{
     font-weight: 400;
 }
 
-.display-calendario {
+section .display-calendario{
+    display: none;
     width: 28%;
     height: auto;
     border-radius: var(--border-radius);
@@ -371,6 +372,35 @@ ol li{
     margin-bottom: 10px;
 }
 
+/* section .display-calendario{ 
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+section .display-calendario h1{
+   padding: 8px;
+}
+
+.calendario-row{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}*/
+
+#displaycrono{ 
+  width: 50%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+}
+
 @media only screen and (max-width: 1200px) {
   .container{
     width: 100%;
@@ -416,7 +446,8 @@ p.display-sistema-descricao{
     height: 80%;
   }
 
-  .display-sistema{
+   .display-sistema,
+   #displaycrono{  
     display: none;
   }
 
@@ -543,13 +574,22 @@ section .display-events{
     justify-content: center;
   }
 
-  .display-sistema{
-    display: none;
+  #displaycrono{ 
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
   }
 
+  section .display-calendario{
+    display: none;
+  }
   .display-sistema-descricao{
     width: 100%;
-    height: auto;
+    height: 100px;
   }
 
   p.display-sistema-descricao{
@@ -561,21 +601,7 @@ section .display-events{
   }
 
   section .display-calendario{
-    width: 98%;
-    display: flex;
-    flex-direction: column;
-    border: none;
-  }
-
-  section .display-calendario h1{
-     padding: 8px;
-  }
-
-  .calendario-row{
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: start;
+    display: none;
   }
 
   .section-eventos{

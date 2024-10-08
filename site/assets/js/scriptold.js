@@ -2,7 +2,11 @@ let filters = document.querySelectorAll(".filterDiv");
 let numberPosition = document.querySelectorAll(".section-results-card-position");
 let categories; 
 categories = document.querySelectorAll(".spancategory");
-var titcategoria = document.getElementById('titulocategoria');
+let categoriapontos; 
+categoriapontos = document.querySelectorAll("#spanpontoscat");
+let geralpontos;
+console.log(categoriapontos);
+geralpontos = document.querySelectorAll("#spanpontosger");
 
 let totalRecords = filters.length;
 filterSelection('ED');
@@ -20,18 +24,13 @@ function filterSelection(category) {
     for(let index = 0;index < totalRecords;index++){
       if ((category != categories[index].innerHTML) && (category != 'ED')) {
         filters[index].style.display = 'none';
+       // geralpontos[index].display = 'flex';
       }else{    
         filters[index].style.display = 'flex';
+       // categoriapontos[index].style.display = 'flex';
+       // geralpontos[index].display = 'none';
         numberPosition[index].innerHTML = '<h1>'+position+'</h1>';
         position += 1;
       }  
     }
-    alert('categoria'); 
-    changeTitleNameCategory(category);   
-}
-
-//***** Change TitleName Category *****
-function changeTitleNameCategory(cat) {
-    alert(cat);
-    titcategoria.innerHTML = 'cat';       
 }

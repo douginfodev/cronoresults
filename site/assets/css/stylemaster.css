@@ -70,6 +70,10 @@ a {
     text-decoration: none;
 }
 
+a#linkbutton{
+    color: var(buttons-text-colors);
+}
+
 a:link,
 a:visited,
 a:hover {

@@ -132,7 +132,7 @@ section .select-categories {
     padding-right: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border-bottom: 2px solid #18F65F;
+    border-bottom: 2px solid;
     background-color: var(--md-ref-foreground-color);
     background-image: url('../../assets/img/foreground-color.png');
 }
@@ -163,13 +163,12 @@ section .select-categories {
     border-radius: 15px;
     padding: 2px;
     border: 1px solid white;
-    color:black;
+    background-color:black;
 }
 
 .section-results-card-position h1{
   font-size: 2.8rem;
   font-weight: 700;
-  color: black;
 }
 
 .section-results-card-identification {

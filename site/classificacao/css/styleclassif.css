@@ -204,7 +204,7 @@ section .select-categories {
 
 
 .section-results-card-content-col {
-    width: 50%;
+    width: 40%;
     height: 70px;
     display: flex;
     font-size: 1.8rem;
@@ -226,7 +226,7 @@ section .select-categories {
 
 
 #section-results-card-content-col {
-    width: 60%;
+    width: 45%;
     height: 60px;
     display: flex;
     justify-content: center;
